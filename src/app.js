@@ -19,6 +19,10 @@ app.use(
 app.use(express.json());
 app.use(cookieParser());
 
+app.get('/', (req, res) => {
+    res.send(`<h1>Welcome to the DSA Sheet API</h1>`);
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/topics", topicRoutes);
 
