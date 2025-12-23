@@ -11,7 +11,7 @@ const app = express();
 // app.use(cors());
 app.use(
     cors({
-        origin: "http://13.204.143.5:3000/",
+        origin: "https://dsa-sheet-web-frontend.vercel.app",
         credentials: true
     })
 );
